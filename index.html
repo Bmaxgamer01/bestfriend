@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ghibli-green: #a8d5ba;
+            --ghibli-cream: #fdf6e3;
+            --ghibli-blue: #bae1ff;
+            --ghibli-brown: #5d4037;
+        }
+
+        body {
+            background-color: var(--ghibli-cream);
+            font-family: 'Gaegu', cursive;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--ghibli-brown);
+            overflow-x: hidden;
+        }
+
+        /* Login Section */
+        #login-screen {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 4px solid var(--ghibli-green);
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: 2px solid var(--ghibli-green);
+            outline: none;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: var(--ghibli-green);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Main Content */
+        #main-content {
+            display: none;
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            font-family: 'Cherry Bomb One', cursive;
+            font-size: 3rem;
+            color: #ffb7b2;
+            text-shadow: 2px 2px white;
+        }
+
+        .video-container {
+            margin: 30px 0;
+            border: 8px solid white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .long-message {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            line-height: 1.8;
+            font-size: 1.4rem;
+            text-align: justify;
+            border-left: 10px solid var(--ghibli-blue);
+        }
+
+        /* Floating elements effect */
+        .leaf {
+            position: fixed;
+            top: -10%;
+            z-index: -1;
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-screen">
+        <h2 style="font-family: 'Cherry Bomb One';">Hello!</h2>
+        <p>Please enter the secret password:</p>
+        <input type="password" id="passwordInput" placeholder="YYYY">
+        <br>
+        <button onclick="checkPassword()">Unlock the Magic</button>
+        <p id="errorMsg" style="color: red; display: none;">Oops! Wrong date. Try again!</p>
+    </div>
+
+    <div id="main-content">
+        <h1 class="header-title">Happy Valentine's Day! 🌸</h1>
+        
+<div class="video-container">
+    <video id="myVideo" width="100%" height="100%" controls>
+        <source src="https://res.cloudinary.com/dsdt44aiq/video/upload/v1771062244/2_clrvd3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h1>Ay maliiii</h1>
+<div class="video-container">
+    <video id="myVideo" width="100%" height="auto" controls>
+        <source src="https://res.cloudinary.com/dsdt44aiq/video/upload/v1771061581/ssstik.io__bakugo_glazer1_1771060289540_fxegyk.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h1>Eto na talagaaaa</h1>
+<div class="video-container">
+    <video id="myVideo" width="100%" height="auto" controls>
+        <source src="https://res.cloudinary.com/dsdt44aiq/video/upload/v1771063358/ssstik.io__chiaroscuro_choly_1771063334948_g6fcpq.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h1>Hihihihi</h1>
+<div class="video-container">
+    <video id="myVideo" width="100%" height="auto" controls>
+        <source src="https://res.cloudinary.com/dsdt44aiq/video/upload/v1771063358/ssstik.io__peaceinafterlife_1771063342547_ruc4t5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h1>last:(</h1>
+        <div class="long-message">
+            <p>
+            Happy Valentine’s Day!  <p>
+
+Gusto ko lang sabihin na sobrang thankful ako na naging kaibigan kita. Hindi man tayo laging nag-uusap o nagkikita, alam mo na isa ka sa mga taong importante sa akin.
+
+Salamat sa mga tawanan, kwentuhan, at sa pagiging totoo mo palagi. Yung friendship natin, isa yun sa mga bagay na pinapahalagahan ko. Ang sarap lang sa pakiramdam na may kaibigang tulad mo na nandyan sa good times at kahit sa random moments lang.
+
+Ngayong Valentine’s Day, hindi lang para sa lovers ang araw na ’to, para rin sa mga taong nagbibigay saya at kulay sa buhay natin tulad mo. Sana maging masaya ang araw mo at mapuno ng good vibes.
+
+Ingat palagi at sana mas tumagal pa friendship natin. Happy Valentine’s Day! 
+            </p>
+        </div>
+        
+        <p style="margin-top: 50px; font-style: italic;">"A heart's a heavy burden." — Howl's Moving Castle</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const input = document.getElementById('passwordInput').value;
+            // Ang password ay: 2026 (2026)
+            if (input === "2026") {
+                document.getElementById('login-screen').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                document.body.style.overflow = 'auto';
+            } else {
+                document.getElementById('errorMsg').style.display = 'block';
+            }
+        }
+
+        // Simple Leaf Fall Animation
+        for (let i = 0; i < 15; i++) {
+            let leaf = document.createElement('div');
+            leaf.className = 'leaf';
+            leaf.innerHTML = '🍃';
+            leaf.style.left = Math.random() * 100 + 'vw';
+            leaf.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            leaf.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            document.body.appendChild(leaf);
+        }
+    </script>
+</body>
+</html>
